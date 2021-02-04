@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  background: #fff;
+}
+
+.main {
+  padding: .4rem;
+}
+
+.main .top-section .hero h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #502050;
+  letter-spacing: -1.14px;
+  font-weight: bold;
+  margin: 2rem 0;
+  margin-top: 4rem;
+  line-height: 1;
+}
+
+.main .top-section .hero .about {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: -.5px;
+  color: #927B71;
+  padding-top: .4rem;
+}
+
+.main .top-section .rating {
+  padding: 1rem;
+}
+
+.main .top-section .rating .single-rate {
+  background: #f7f2f7;
+  padding: .6rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: .3rem;
+  margin: 1rem 0;
+}
+
+.main .top-section .rating .single-rate .rate-icon {
+  text-align: center;
+  color: #EF9546;
+}
+
+.main .top-section .rating .single-rate .rate-icon i {
+  line-height: 1.9;
+  font-size: 1.2rem;
+}
+
+.main .top-section .rating .single-rate .text {
+  padding: .4rem 0;
+  color: #512051;
+  font-weight: bold;
+}
+
+.main .buyers {
+  padding: .8rem;
+}
+
+.main .buyers .single-buyer {
+  background: #512051;
+  color: #fff;
+  padding: 2rem;
+  border-radius: .7rem;
+  margin: 1rem 0;
+}
+
+.main .buyers .info-pic {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .buyers .info-pic .pic img {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.main .buyers .info-pic .buyer span {
+  line-height: 1.9;
+  color: #ee68a4;
+}
+
+.main .buyers .info {
+  margin: 1rem 0;
+  line-height: 1.7;
+}
+
+.attribution {
+  padding: 1.5rem;
+  margin-top: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .top-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  .main .top-section .hero h2 {
+    text-align: left;
+    margin: 1.8rem 0;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    width: 70%;
+    line-height: 1.1;
+  }
+  .main .top-section .hero .about {
+    text-align: left;
+    font-size: .8rem;
+  }
+  .main .top-section .rating .single-rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: .5rem;
+    width: 65%;
+    font-size: .8rem;
+  }
+  .main .top-section .rating .single-rate .rate-icon i {
+    font-size: .6rem;
+  }
+  .main .top-section .rating .single-rate .text {
+    font-size: .7rem;
+    line-height: 1;
+  }
+  .main .top-section .rating .single-rate:nth-child(2) {
+    margin-left: 2rem;
+  }
+  .main .top-section .rating .single-rate:nth-last-child(1) {
+    margin-left: 4rem;
+  }
+  .main .buyers {
+    padding: 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .main .buyers .single-buyer {
+    max-height: 250px;
+    margin: 0;
+  }
+  .main .buyers .single-buyer .info {
+    font-size: .7rem;
+  }
+  .main .buyers .single-buyer .info-pic {
+    gap: 1.1rem;
+  }
+  .main .buyers .single-buyer .info-pic .pic img {
+    width: 40px;
+  }
+  .main .buyers .single-buyer .info-pic .buyer .name,
+  .main .buyers .single-buyer .info-pic .buyer .verified {
+    font-size: .8rem;
+  }
+  .main .buyers .single-buyer:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .main .buyers .single-buyer:last-child {
+    margin-top: 4rem;
+  }
+  .attribution {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main .top-section .hero .about {
+    width: 70%;
+  }
+  .buyers .single-buyer:last-child {
+    margin-top: 60rem;
+  }
+}
